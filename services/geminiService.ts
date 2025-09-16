@@ -113,6 +113,7 @@ export const generateJsonPrompts = async (
                 - The 'consistent_features' and 'avoid_changes' arrays are crucial for character consistency. Populate them with key visual traits.
                 - Creatively determine the 'camera' style (angles, movement) and add descriptive details to the visual style.
                 - If dialogue is requested, make it short, natural, and in Bahasa Indonesia.
+                - Dialogue/narration must fit into 7 seconds
                 - The 'transition_to_next_scene' should be a brief, creative description of how this scene ends and the next begins.
                 - Only output the raw JSON object, without any markdown formatting like \`\`\`json.`,
                 responseSchema: {
