@@ -57,14 +57,14 @@ const Setup: React.FC<SetupProps> = ({ geminiApiKey, veoApiKey, onSave }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ApiKeyInputSection
           title="Gemini API Key"
-          description="Used for generating JSON prompts in the 'Generator' tab."
+          description="Pakai dari 'https://aistudio.google.com/apikey' menggunakan akun gmail"
           value={localGeminiKey}
           onChange={(e) => setLocalGeminiKey(e.target.value)}
           isConfigured={!!geminiApiKey}
         />
         <ApiKeyInputSection
           title="VEO API Key"
-          description="Used for creating videos from prompts in the 'Dashboard' tab."
+          description="Pakai dari Gemini API, dari labs 'console google'"
           value={localVeoKey}
           onChange={(e) => setLocalVeoKey(e.target.value)}
           isConfigured={!!veoApiKey}
